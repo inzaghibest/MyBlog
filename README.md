@@ -1,4 +1,5 @@
 # myblog
+采用vue.js + SpringBoot搭建自己的博客,项目正在进行中...
 
 ## Project setup
 ```
