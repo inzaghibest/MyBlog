@@ -12,8 +12,8 @@
                 <a href="#">联系</a>
         </div>
         <div class="search-group" slot="right-nav">
-            <input type="text" placeholder="Search Here">
-            <button>搜索</button>
+            <input type="text" class="search" placeholder="Search Here.">
+            <input type="submit" value class="fs">
         </div>
       </nav-bar>
   </div>
@@ -55,8 +55,8 @@ export default {
     }
 
     a:hover{
-        background-color: #d6b487;
-        border-bottom: 2px solid rgb(167, 229, 240);
+        background-color: #f4f6ff;
+        border-bottom: 2px solid #f7f7ee;
     }
 
     .nav-bar-right .search-group{
@@ -64,25 +64,31 @@ export default {
         top: 40px;
     }
 
-    .search-group input, button{
+    .search-group input{
         height: 35px;
         margin-left: 5px;
     }
 
-    .search-group input {
+    .search-group .search {
+        background: none;
+        padding: 5px;
+        color: #898989;
         border: 1px solid  #ebebeb;
     }
 
-    .search-group button{
+    .search-group .fs{
         width: 60px;
+        background: url("../../../assets/img/home/search.png") no-repeat center;
         background-color:  #a6dcef;
         border: none;
         border-radius: 5px;
-         border: solid 1px #fff; 
+        border: solid 1px #fff; 
+        vertical-align: middle;
+        margin-top: -5px;
     }
 
-    .search-group button:hover{
-        background-color: #e36387;
+    .search-group .fs:hover{
+        background-color: #e84a5f;
         color: #fff;
         border: 1px solid #a6dcef;
     }
